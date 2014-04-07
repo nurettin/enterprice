@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/enterprice.svg)](http://badge.fury.io/rb/enterprice)
+
 # Tests
   
   run `rake test`
