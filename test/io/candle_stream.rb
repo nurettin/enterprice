@@ -1,4 +1,4 @@
-require_relative '../../lib/enterprice/io/candle_stream'
+require 'candle_stream'
 require 'test/unit'
 
 class TestIO< Test::Unit::TestCase
@@ -16,6 +16,10 @@ class TestIO< Test::Unit::TestCase
     s<< [41, 995, 10]
 
     assert_equal r, [[1, 1000, 1100, 900, 990, 40], [21, 990, 992, 992, 992, 10]]
+    # force a block call with latest state
+    s.call
+    assert_equal r, [[1, 1000, 1100, 900, 990, 40], [21, 990, 992, 992, 992, 10], [41, 992, 995, 995, 995, 10]]
+
   end
 
 end
