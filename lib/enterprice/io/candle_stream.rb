@@ -1,6 +1,6 @@
 require "csv"
 
-module Enterprise; module IO
+module Enterprice; module IO
 
 class CandleStream
   attr_accessor :period
