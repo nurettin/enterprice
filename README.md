@@ -1,3 +1,7 @@
+# Tests
+  
+  run `rake test`
+
 # Utilities
 
 ## IO
