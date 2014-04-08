@@ -3,8 +3,6 @@ require_relative './candle_stream'
 module Enterprice; module IO
 
 class NamedCandleStream< Enterprice::IO::CandleStream
-  attr_accessor :name
-
   def initialize(period, name, block)
     @name= name
     super(period, block)
