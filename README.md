@@ -12,6 +12,10 @@
 
     This utility calls a provided block of code for each bar as data is pushed in and aggregated.
 
+* Multi Candle Streaming
+  
+    Same as candle streaming, but for multiple stock options. Calls provided block with the name of the option.
+
 # FAQ
   
 * It should be enterpri`se`.
