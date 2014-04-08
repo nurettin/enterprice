@@ -46,11 +46,11 @@ class CandleStream
     @block.call [@pivot, @open, @high, @low, @close, @volume]
   end
 
+private
   def call_blank
     @block.call [@pivot, @prev_close, @prev_close, @prev_close, @prev_close, 0]
   end
 
-private
   def reset_state
     @high= -Float::INFINITY
     @low= Float::INFINITY
