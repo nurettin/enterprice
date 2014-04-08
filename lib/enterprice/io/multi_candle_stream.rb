@@ -3,10 +3,6 @@ require_relative './named_candle_stream'
 module Enterprice; module IO
 
 class MultiCandleStream
-  attr_accessor :streams
-  attr_accessor :period
-  attr_accessor :block
-
   def initialize(period, block)
     @streams= {}
     @period= period
