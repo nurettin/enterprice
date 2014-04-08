@@ -1,5 +1,3 @@
-require "csv"
-
 module Enterprice; module IO
 
 class CandleStream
@@ -31,7 +29,7 @@ class CandleStream
     end
     
     while ts> @pivot+ @period- 1
-      @block.call [@pivot, @prev_close, @prev_close, @prev_close, @prev_close, 0]
+      call_blank
       @pivot+= @period
     end
     
@@ -48,12 +46,16 @@ class CandleStream
     @block.call [@pivot, @open, @high, @low, @close, @volume]
   end
 
+  def call_blank
+    @block.call [@pivot, @prev_close, @prev_close, @prev_close, @prev_close, 0]
+  end
+
 private
   def reset_state
-    @high= 0.0
-    @low= 1000000.0
-    @close= 0.0
-    @volume= 0.0
+    @high= -Float::INFINITY
+    @low= Float::INFINITY
+    @close= -Float::INFINITY
+    @volume= 0
   end
 end # Enterprise::CandleStream
 
