@@ -21,3 +21,5 @@
 * It should be enterpri`se`.
 
   That name is taken on rubyforge, so I jest.
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/nurettin/enterprice/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
