@@ -2,13 +2,13 @@
 
 * Added dependency on ta-indicator which depends on ta-lib.
 
-    wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
-    tar zxf ta-lib-0.4.0-src.tar.gz
-    cd ta-lib
-    ./configure LDFLAGS="-lm"
-    make
-    sudo make install
-    sudo cp /usr/local/lib/libta_* /usr/lib
+        wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+        tar zxf ta-lib-0.4.0-src.tar.gz
+        cd ta-lib
+        ./configure LDFLAGS="-lm"
+        make
+        sudo make install
+        sudo cp /usr/local/lib/libta_* /usr/lib
 
 * Added moving average stream for sma, wma, ema, dema, tema, kama methods of curve smoothing.
 * Added signal stream for two moving averages. There is also a stop-loss signal which stops all trading.
