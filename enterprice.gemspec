@@ -14,5 +14,6 @@ Gem::Specification.new do |s|
   s.license= 'MIT'
   s.add_development_dependency 'minitest', '~> 0'
   s.add_dependency 'ta-indicator', '~> 0'
+  s.required_ruby_version= '~> 2.1'
 end
 
