@@ -1,7 +1,7 @@
 ### 0.2.4
 
 * Added dependency on ta-indicator which depends on ta-lib.
-  
+
     wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
     tar zxf ta-lib-0.4.0-src.tar.gz
     cd ta-lib
