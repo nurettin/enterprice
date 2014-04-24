@@ -1,9 +1,8 @@
-require 'candle_stream'
-require 'multi_candle_stream'
-require 'test/unit'
+require 'enterprice'
+require 'minitest/autorun'
 require 'set'
 
-class TestIO< Test::Unit::TestCase
+class TestIO< MiniTest::Test
 
   def test_candle_stream
     r= []

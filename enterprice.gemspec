@@ -9,8 +9,10 @@ Gem::Specification.new do |s|
   s.description= 'This gem provides utilities and methods I use when inspecting time series on remote machines.'
   s.author= 'Nurettin Onur TUĞCU'
   s.email= 'onur.tugcu@gmail.com'
-  s.files= Dir.glob('lib/**/*').select{ |d| !File.directory?(d) }
+  s.files= Dir.glob('lib/**/*').reject{ |d| File.directory?(d) }
   s.homepage= 'https://github.com/nurettin/enterprice'
   s.license= 'MIT'
+  s.add_development_dependency 'minitest', '~> 0'
+  s.add_dependency 'ta-indicator', '~> 0'
 end
 

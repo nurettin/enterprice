@@ -1,21 +1,38 @@
-### 0.0.1
+### 0.2.4
 
-* Initialized repo, added candle streaming utility
+* Added dependency on ta-indicator which depends on ta-lib.
+  
+    wget http://prdownloads.sourceforge.net/ta-lib/ta-lib-0.4.0-src.tar.gz
+    tar zxf ta-lib-0.4.0-src.tar.gz
+    cd ta-lib
+    ./configure LDFLAGS="-lm"
+    make
+    sudo make install
+    sudo cp /usr/local/lib/libta_* /usr/lib
 
-### 0.0.1-1 Unreleased
+* Added moving average stream for sma, wma, ema, dema, tema, kama methods of curve smoothing.
+* Added signal stream for two moving averages. There is also a stop-loss signal which stops all trading.
+* Switched to MiniTest because it comes with ruby.
 
-* Added candle stream test
+### 0.1.4
+
+* Fix path so you can do `require "enterprice"` instead of having to do `require "enterprice/io/blah"`
+
+### 0.1.3
+
+* Switch to semantic versioning.
+* Fix horrible bug caused by change of paths.
 
 ### 0.0.2
 
 * Added multi candle streaming utility for managing multiple options at once.
 * Added tests for multi candle streaming.
 
-### 0.1.3
+### 0.0.1-1 Unreleased
 
-* Switch to semantic versioning
-* Fix horrible bug caused by change of paths
+* Added candle stream test.
 
-### 0.1.4
+### 0.0.1
 
-* Fix path so you can do `require "enterprice"` instead of having to do `require "enterprice/io/blah"`
+* Initialized repo, added candle streaming utility.
+
