@@ -1,5 +1,7 @@
 [![Gem Version](https://badge.fury.io/rb/enterprice.svg)](http://badge.fury.io/rb/enterprice)
 
+# enter> price
+
 ## Tests
   
   run `rake test`
